@@ -160,3 +160,35 @@ i {
 button{
     outline: none;
 }
+
+@media only screen and (max-width: 600px){
+	
+body {
+    background-position:center;
+}
+.head {
+    height: 500px;
+}
+img {
+    display: none;
+}
+.head > h2 {
+    top: 20%;
+}
+.buttons {
+    top: 30%;
+}
+.quote {
+    font-size: 42px;
+    width: 90%;
+    line-height: 40px;
+}
+.quote>span {
+    font-size: 45px;
+    text-decoration: underline;
+    color: var(--yellow-color);
+}
+.find {
+    bottom: 20%;
+}
+}
