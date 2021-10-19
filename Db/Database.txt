@@ -1,0 +1,9 @@
+Username: gSISjg7PrJ
+
+Database name: gSISjg7PrJ
+
+Password: 7SFhNzOXoh
+
+Server: remotemysql.com
+
+Port: 3306

@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+:root {
+    --primary-color: #f5f6f1;
+    --accent-color: #6c8c9f;
+    --icon-color: #747c90;
+    --yellow-color: #fbac1e;
+    --dark-color: #0c2c54;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    background: #444;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/Bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.head {
+    position: relative;
+    height: 150px;
+}
+
+.head>img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    filter: drop-shadow(0px 0.5px 1px #fff);
+
+
+}
+
+.head>h2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    left: 13%;
+    color: var(--primary-color);
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.head>h2>span {
+    color: var(--yellow-color);
+}
+
+.buttons {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+.buttons button {
+    height: 50px;
+    border-radius: 40px;
+    background: #0c2c54;
+    color: var(--primary-color);
+    border: 2px solid var(--dark-color);
+    width: 150px;
+    font-weight: 600;
+    margin-right:10px;
+    transition: 0.25s ease-in;
+}
+
+button:hover {
+    background: none !important;
+    color: var(--primary-color) !important;
+    border: 2px solid var(--yellow-color) !important;
+
+}
+.quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65vw;
+    font-weight: 900;
+    text-align: center;
+    font-size: 60px;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 5px 5px 5px #333;
+
+}
+
+.quote>span {
+    font-size: 55px;
+    text-decoration: underline;
+    color: var(--yellow-color);
+}
+i {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-left: 10px;
+    margin-top: 5px;
+    color: var(--yellow-color);
+
+}
+.find {
+    position: absolute;
+    font-size: 22px;
+    font-weight: bolder;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    bottom: 25%;
+    width: 200px;
+    height: 60px;
+    border: none; 
+    background: var(--dark-color);
+    color: var(--primary-color) !important;
+    border: 2px solid var(--dark-color) !important;
+    border-radius: 50px;
+    transition: 0.15 ease-in;
+}
+.find:hover {
+    width: 230px;
+    background: var(--dark-color) !important;
+    color: var(--primary-color) !important;
+    border: 2px solid var(--yellow-color) !important;
+    border-radius: 50px;
+    padding-left: 30px;
+    text-align: center;
+    transition: 0.5s ease-in;
+}
+.find:not(:hover) {
+    transition: 0.25s ease-in;
+}
+.find:hover > i {
+    transform: scale(30);
+    transition: 0.5s ease-in;
+}
+button{
+    outline: none;
+}
