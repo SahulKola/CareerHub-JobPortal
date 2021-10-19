@@ -157,6 +157,10 @@ i {
     transform: scale(30);
     transition: 0.5s ease-in;
 }
+.find:not(:hover) > i {
+    transform: scale(1);
+    transition: 0.35s ease-in;
+}
 button{
     outline: none;
 }
