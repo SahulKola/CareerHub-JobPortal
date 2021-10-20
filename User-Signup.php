@@ -56,7 +56,7 @@
                 <div class="foot">Already a <b> User</b> ? <a href="User-Login.php">Login</a> </div>
             </form>
         </div>
-        <img src="images/UserSignup.svg" alt="Signup" class="banner banner-user"/>
+        <img src="images/Usersignup.svg" alt="Signup" class="banner banner-user"/>
     </main>
 </body>
 <?php include 'Headers/_footer.php'; ?>
