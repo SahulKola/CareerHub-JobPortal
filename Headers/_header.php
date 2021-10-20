@@ -10,3 +10,4 @@
     <link rel="shortcut icon" type="image/png" href="images/icon.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <a href="https://icons8.com/icon/EInDLGZwVHf7/user"></a>

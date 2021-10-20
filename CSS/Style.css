@@ -4,8 +4,8 @@
     --primary-color: #f5f6f1;
     --accent-color: #6c8c9f;
     --icon-color: #747c90;
-    --yellow-color: #fbac1e;
-    --dark-color: #0c2c54;
+    --yellow-color: #fcc726;
+    --dark-color: #186bac;
 
 }
 
@@ -24,7 +24,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(images/Bg.jpg);
+    background-image: url(../images/Bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -80,7 +80,7 @@ body::before {
 .buttons button {
     height: 50px;
     border-radius: 40px;
-    background: #0c2c54;
+    background: var(--dark-color);
     color: var(--primary-color);
     border: 2px solid var(--dark-color);
     width: 150px;

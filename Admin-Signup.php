@@ -1,6 +1,6 @@
 <?php require 'Headers/_header.php'; ?>
-<link rel="stylesheet" href="a_register.css">
-<title>Admin Register | Career Club</title>
+<link rel="stylesheet" href="CSS/Signup.css">
+<title>`A`dmin SignUp | Career Club</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@
                 <div class="mobe input-group mb-3">
                     <span class="input-group-text" id="mobile" id="basic-addon1">+91</span>
                     <input type="text"id="size" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number"
-                        aria-describedby="basic-addon1">
+                        aria-describedby="basic-addon1" maxlength=10>
                 </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -54,10 +54,10 @@
                             href="#">Privacy Policy</a></label>
                 </div>
                 <button type="submit" class="button">Sign Up</button>
-                <div class="foot">Already an <b> Admin</b> ? <a href="#">Login</a> </div>
+                <div class="foot">Already an <b> Admin</b> ? <a href="Admin-Login.php">Login</a> </div>
             </form>
         </div>
-        <img src="images/Signup.svg" alt="Signup">
+        <img src="images/AdminSignup.svg" alt="Signup">
     </main>
 </body>
 <?php include 'Headers/_footer.php'; ?>

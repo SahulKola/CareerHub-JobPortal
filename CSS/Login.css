@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+:root {
+    --primary-color: #f5f6f1;
+    --accent-color: #6c8c9f;
+    --icon-color: #747c90;
+    --yellow-color: #fcc726;
+    --dark-color: #186bac;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--primary-color);
+    overflow-y: hidden;
+    z-index: 0;
+}
+
+.container {
+    z-index: 2;
+}
+
+.box {
+    position: relative;
+    width: 38vw;
+    height: 60vh;
+    margin-top: 130px;
+    left: 700px;
+    border-radius: 50px;
+    background: #f5f6f1;
+    border-radius: 39px;
+    background: linear-gradient(145deg, #ffffff, #ddddd9);
+    box-shadow: 7px 7px 28px #9fa09d,
+        -7px -7px 28px #ffffff;
+    padding: 20px 60px;
+}
+
+h2 {
+    color: var(--dark-color);
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+
+h2>span {
+    color: var(--yellow-color);
+    margin-left: 2px;
+}
+
+h4 {
+    font-weight: bolder;
+    color: #444;
+    font-size: 32px;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+hr {
+    margin: 10px 0px 50px 0px !important;
+}
+
+img {
+    width: 35px;
+}
+
+.icons {
+    margin-bottom: 15px !important;
+}
+
+form {
+    position: relative;
+    margin-top: 10px;
+}
+
+input[type='text'],
+input[type='password'] {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+form div {
+    margin-bottom: 5px !important;
+    margin-top: 0px;
+}
+
+.input-fields {
+    margin: auto;
+    width: 80%;
+}
+
+.banner {
+    position: absolute;
+    width: 45%;
+    margin-top: 100px;
+    filter: drop-shadow(1px 10px 2px #aaa);
+    animation-name: move;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+button {
+    position: relative;
+    height: 50px;
+    border-radius: 40px;
+    background: var(--dark-color);
+    color: var(--primary-color);
+    border: 2px solid var(--dark-color);
+    width: 150px;
+    left: 50px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.25s ease-in;
+}
+
+button:hover {
+    background: none !important;
+    color: var(--dark-color) !important;
+    font-weight: bolder;
+    border: 2px solid var(--yellow-color) !important;
+
+}
+
+.foot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline dotted !important;
+}
+.banner-login {
+    width: 35%;
+    left: 15%;
+    margin-top: 60px;
+}
+@keyframes move {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: 25px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #fff;
+        position: relative;
+        overflow-y: hidden;
+        z-index: -2;
+    }
+
+    .box {
+        position: relative;
+        left: -2%;
+        margin: 100px 10px;
+        padding: 20px 10px;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        background: none;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    .input-fields {
+        width: 100%;
+    }
+
+    .banner {
+        position: absolute;
+        width: 45%;
+        filter: drop-shadow(1px 10px 2px #aaa);
+        animation-name: move;
+        animation-timing-function: ease-in-out;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    form {
+        z-index: 10;
+        background: none;
+    }
+
+    button {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.25s ease-in;
+    }
+
+    .banner {
+        z-index: -1;
+        margin-top: 400px;
+        padding: 0;
+        top: 50px;
+        width: 100%;
+        opacity: 0.15;
+    }
+    
+    .foot {
+    width: 110%;
+    position: absolute;
+    left: 75%;
+    font-weight: 600;
+    transform: translateX(-50%);
+    bottom: -100%;
+}
+
+.banner-login {
+    width: 120%;
+    left: -0%;
+    margin-top: 200px;
+    opacity: 0.5;
+}
+}   
