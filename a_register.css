@@ -207,6 +207,7 @@ a:hover {
 
     input[type='text'],
     input[type='password'] {
+        background: rgba(255, 255, 255,0.5);
         width: 210% !important;
     }
 
@@ -217,6 +218,7 @@ a:hover {
 
     input[type='email'] {
         width: 93% !important;
+        background: rgba(255, 255, 255,0.5);
     }
 
     #last {
