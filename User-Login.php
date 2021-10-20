@@ -13,12 +13,12 @@
             <form action="register.php">
                 <div class="input-fields">
                 <div class="input-group flex-nowrap icons">
-                    <span class="input-group-text" id="addon-wrapping"><img src="images/user-icon.gif" /></span>
+                    <span class="input-group-text" id="addon-wrapping"><img src="images/User-icon.gif"></span>
                     <input type="email" class="form-control" placeholder="Email Address" aria-label="Username"
                         aria-describedby="addon-wrapping">
                 </div>
                 <div class="input-group flex-nowrap">
-                    <span class="input-group-text" id="addon-wrapping"><img src="images/user-password.gif" /></span>
+                    <span class="input-group-text" id="addon-wrapping"><img src="images/User-password.gif"></span>
                     <input type="password" class="form-control" placeholder="Password" aria-label="Username"
                         aria-describedby="addon-wrapping">
                 </div>

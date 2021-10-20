@@ -1,6 +1,6 @@
 <?php require 'Headers/_header.php'; ?>
 <link rel="stylesheet" href="CSS/Signup.css">
-<title>`A`dmin SignUp | Career Club</title>
+<title>Admin Sign Up | Career Club</title>
 </head>
 
 <body>

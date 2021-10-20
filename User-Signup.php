@@ -1,6 +1,6 @@
 <?php require 'Headers/_header.php'; ?>
 <link rel="stylesheet" href="CSS/Signup.css">
-<title>User SignUp | Career Club</title>
+<title>User Sign Up | Career Club</title>
 </head>
 <body>
     <main class="container">
@@ -56,7 +56,7 @@
                 <div class="foot">Already a <b> User</b> ? <a href="User-Login.php">Login</a> </div>
             </form>
         </div>
-        <div class="user"><img src="images/UserSignup.svg" alt="Signup" class="banner banner-user"/></div>
+        <img src="images/UserSignup.svg" alt="Signup" class="banner banner-user"/>
     </main>
 </body>
 <?php include 'Headers/_footer.php'; ?>
