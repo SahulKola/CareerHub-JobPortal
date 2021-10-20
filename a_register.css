@@ -20,9 +20,11 @@ body {
     overflow-y: hidden;
     z-index: 0;
 }
+
 .container {
     z-index: 2;
 }
+
 .box {
     position: relative;
     width: 45vw;
@@ -35,8 +37,9 @@ body {
     background: linear-gradient(145deg, #ffffff, #ddddd9);
     box-shadow: 7px 7px 28px #9fa09d,
         -7px -7px 28px #ffffff;
-    padding:20px 60px;
+    padding: 20px 60px;
 }
+
 h2 {
     color: var(--dark-color);
     text-align: center;
@@ -44,40 +47,49 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 0px;
 }
+
 p {
     margin: 0 !important;
-    padding:0 !important;
+    padding: 0 !important;
 
 }
+
 h2>span {
     color: var(--yellow-color);
     margin-left: 2px;
 }
+
 h4 {
     font-weight: bolder;
     color: #444;
     margin: 0px !important;
     padding: 0px !important;
 }
+
 p {
     margin: 0px !important;
     padding: 0px !important;
 }
+
 hr {
     margin: 3px 0px !important;
     padding: 0px !important;
 }
+
 form {
     position: relative;
     margin-top: -5px;
 }
+
 form div {
     margin-bottom: 5px !important;
     margin-top: 0px;
 }
+
 .m-t {
     margin-top: -35px !important;
 }
+
 .m-0 {
     margin-top: -5px !important;
     margin-bottom: 10px !important;
@@ -87,6 +99,7 @@ form div {
 #last {
     margin-left: 10px !important;
 }
+
 img {
     position: absolute;
     transform: scale(0.65);
@@ -96,7 +109,8 @@ img {
     animation-timing-function: ease-in-out;
     animation-duration: 3s;
     animation-iteration-count: infinite;
-} 
+}
+
 button {
     height: 50px;
     border-radius: 40px;
@@ -105,7 +119,7 @@ button {
     border: 2px solid var(--dark-color);
     width: 150px;
     font-weight: 600;
-    margin-right:10px;
+    margin-right: 10px;
     transition: 0.25s ease-in;
 }
 
@@ -115,17 +129,20 @@ button:hover {
     border: 2px solid var(--yellow-color) !important;
 
 }
+
 .foot {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: -8%;
 }
+
 a {
     text-decoration: none;
 }
+
 a:hover {
-    text-decoration:underline dotted !important;
+    text-decoration: underline dotted !important;
 }
 
 @keyframes move {
@@ -141,21 +158,23 @@ a:hover {
         top: 0;
     }
 }
-@media only screen and (max-width: 600px){
-    *{
+
+@media only screen and (max-width: 600px) {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-body {
-    background: var(--primary-color);
-    position: fixed;
-    overflow-y: hidden;
-    z-index: -2;
+    body {
+        background: #fff;
+        position: fixed;
+        overflow-y: hidden;
+        z-index: -2;
 
-}
-    .box{
+    }
+
+    .box {
         margin: 10px 10px;
         padding: 20px 10px;
         width: 98%;
@@ -163,38 +182,47 @@ body {
         box-shadow: none;
         background: none;
     }
+
     form {
         z-index: 10;
         background: none;
     }
+
     .mob {
         position: relative;
         left: 0px;
-        margin:0;
+        margin: 0;
         padding: 0;
         width: 100%;
         text-align: left !important;
         display: flex;
         flex-direction: column !important;
         margin-left: -20%;
-        
+
     }
+
     .mm-t {
-        margin-top:-10px !important;
+        margin-top: -10px !important;
     }
-    input[type='text'], input[type='password']{
+
+    input[type='text'],
+    input[type='password'] {
         width: 210% !important;
     }
+
     .mobe {
         position: relative;
         left: 8%;
     }
-    input[type='email']{
+
+    input[type='email'] {
         width: 93% !important;
     }
+
     #last {
         margin: 0px !important;
     }
+
     img {
         z-index: -1;
         margin-top: 150px;
@@ -203,28 +231,39 @@ body {
         right: -80%;
         opacity: 0.15;
     }
+
     #passwordHelpBlock {
         position: relative !important;
         left: 12% !important;
         width: 90%;
     }
+
     #mobile {
         display: none;
     }
+
     .form-check {
-         position: relative;
+        position: relative;
         left: 8%;
     }
-    button{
-         position: relative;
+
+    button {
+        position: relative;
         left: 8%;
     }
+    h4,p {
+        position: relative;
+        left: 3%;
+
+    }
+
     #size {
-        margin-right:6%;
+        margin-right: 6%;
     }
+
     .foot {
         position: relative;
-        margin-top: 10px;
+        margin-top: 15px;
         text-align: center;
         width: 100%;
     }
