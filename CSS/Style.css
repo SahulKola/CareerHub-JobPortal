@@ -60,9 +60,9 @@ body::before {
 .head>h2 {
     position: absolute;
     top: 50%;
-    transform: translateY(-70%);
-    left: 13%;
-    color: var(--primary-color);
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: var(--dark-color);
     font-size: 38px;
     font-family: 'Montserrat', sans-serif;
 }
