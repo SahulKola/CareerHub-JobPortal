@@ -178,7 +178,8 @@ button:hover {
 /*Applied*/
 .box {
     padding: 30px !important;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 table {
@@ -206,4 +207,25 @@ td {
 
 td:hover {
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* scroll */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--icon-color); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-color); 
 }
