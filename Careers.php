@@ -1,5 +1,5 @@
 <?php require 'Headers/_header.php' ?>
-<link rel="stylesheet" href="CSS/Careerspage.css">
+<link rel="stylesheet" href="CSS/Careers.css">
 <title> Careers | Career Club</title>
 </head>
 

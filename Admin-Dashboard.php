@@ -25,6 +25,9 @@
             <a href="Underconstruction.php">
                 <li><i class="fas fa-address-card   "></i>Projects</li>
             </a>
+            <a href="Logout.php">
+                <li><i class="fas fa-sign-out-alt"></i>Logout</li>
+            </a>
         </ul>
     </aside>
 </body>
