@@ -130,7 +130,7 @@ img {
     bottom: -20%;
     left: -10%;
     z-index: -1;
-    opacity: 1;
+    opacity: 0.075;
 }
 
 .details {
@@ -138,9 +138,9 @@ img {
 }
 
 .content-box>span {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 650;
-    color: #333
+    color: var(--dark-color);
 }
 
 .details span i {
@@ -151,7 +151,6 @@ img {
     margin: 0 !important;
     padding: 0 !important;
     font-size: 17px;
-    line-height: px !important;
 }
 
 .details span {
@@ -160,9 +159,9 @@ img {
 }
 
 button {
-    position: relative;
-    left: 230px;
-    bottom: -30px;
+    position: absolute;
+    left: 250px;
+    bottom: 10px;
     height: 50px;
     border-radius: 40px;
     background: var(--dark-color);

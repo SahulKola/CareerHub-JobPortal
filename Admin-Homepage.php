@@ -1,10 +1,114 @@
-<?php require 'Headers/_header.php' ?>
 <?php require 'Admin-Dashboard.php' ?>
-
 <div class="box">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab rerum ea praesentium qui tempore soluta voluptatum
-    blanditiis inventore dolores eveniet ut voluptatem laudantium, magnam reprehenderit laborum cum dignissimos! Odit
-    rem, quas ipsa culpa officia soluta earum quia eos, suscipit perferendis architecto aspernatur voluptates. Ullam
-    recusandae cupiditate blanditiis, nesciunt cum libero?
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Candidate Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Skills</th>
+                <th scope="col">Year of Pass</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">1</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Hello</td>
+                <td>Full Stack Developer</td>
+                <td>HTML, CSS, Javascript, SQL</td>
+                <td>2022</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-<?php require 'Headers/_footer.php' ?>
