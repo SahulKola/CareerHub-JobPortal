@@ -1,4 +1,10 @@
-<?php require 'Headers/_header.php' ?>
+<?php require 'Headers/_header.php';
+    session_start();
+    if(!isset($_SESSION['login'])){
+        header('Location: User-Login.php');
+    }
+?>
+
 <link rel="stylesheet" href="CSS/Careers.css">
 <title> Careers | Career Club</title>
 </head>
@@ -13,58 +19,30 @@
     <div class="box">
         <hr>
         <div class="main-content">
-            <div class="content-box">
-                <div class="head-details">
-                    <h4>Job Title</h4>
-                    <p>Company namee</p>
-                </div>
-                <span><i class="fas fa-map-marker-alt"></i> Location</span> <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam soluta suscipit, quibusdam incidunt
-                reiciendis explicabo debitis harum officia!
-                <div class="details">
-                    <p><span> Skills Required </span> : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestiae, dolorum.</p>
-                    <p><span>Year of Passing</span> : </p>
-                    <p><span>Salary </span>:</p>
-                </div>
-                <a href="#"><button class="" type="button">Apply Now</button></a>
-                <img src="images/icon.png" alt="CompanyLogo">
-            </div>
-            <div class="content-box">
-                <div class="head-details">
-                    <h4>Job Title</h4>
-                    <p>Company namee</p>
-                </div>
-                <span><i class="fas fa-map-marker-alt"></i> Location</span> <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam soluta suscipit, quibusdam incidunt
-                reiciendis explicabo debitis harum officia!
-                <div class="details">
-                    <p><span> Skills Required </span> : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestiae, dolorum.</p>
-                    <p><span>Year of Passing</span> : </p>
-                    <p><span>Salary </span>:</p>
-                </div>
-                <a href="#"><button class="" type="button">Apply Now</button></a>
-                <img src="images/icon.png" alt="CompanyLogo">
-            </div>
-            <div class="content-box">
-                <div class="head-details">
-                    <h4>Job Title</h4>
-                    <p>Company namee</p>
-                </div>
-                <span><i class="fas fa-map-marker-alt"></i> Location</span> <br>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam soluta suscipit, quibusdam incidunt
-                reiciendis explicabo debitis harum officia!
-                <div class="details">
-                    <p><span> Skills Required </span> : Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Molestiae, dolorum.</p>
-                    <p><span>Year of Passing</span> : </p>
-                    <p><span>Salary </span>:</p>
-                </div>
-                <a href="#"><button class="" type="button">Apply Now</button></a>
-                <img src="images/icon.png" alt="CompanyLogo">
-            </div>
+            <?php 
+             require 'PHP/db.php';
+             $query = "SELECT * FROM CAREERS";
+             $result = mysqli_query($conn,$query); 
+             while($row = mysqli_fetch_assoc($result)){
+                echo "<div class='content-box' >
+                    <div class='head-details'>
+                        <h4>". $row['POSITION']."</h4>
+                        <p>".$row['COMPANYNAME']."</p>
+                    </div>
+                    <span><i class='fas fa-map-marker-alt'></i>  ".$row['LOCATION']."</span> <br>"
+                    .$row['JD']."
+                    <div class='details'>
+                        <p><span> Skills Required </span> :". $row['SKILLS']."</p>
+                        <p><span>Year of Passing </span> :".$row['YEAR']."</p>
+                        <p><span>Salary </span>:".$row['SAL']."</p>
+                    </div>
+                    <a href='#'><button class='' type='button'>Apply Now</button></a>
+                    <img src='images/icon.png' alt='CClogo'>
+                </div>";
+            }
+             ?>
         </div>
+
     </div>
 </body>
 <?php require 'Headers/_footer.php' ?>

@@ -1,4 +1,10 @@
-<?php require 'Admin-Dashboard.php' ?>
+<?php require 'Admin-Dashboard.php'; 
+    session_start();
+    if(!isset($_SESSION['login'])){
+        header('Location: Admin-Login.php');
+    }
+?>
+
 <div class="box">
     <table class="table table-hover">
         <thead>
