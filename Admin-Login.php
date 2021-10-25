@@ -22,7 +22,7 @@
         if($count == 1){
             $_SESSION['adminlogin'] = 'loggedin';
             $_SESSION['adminname'] = $row['FULLNAME'];
-            $_SESSION['adminid'] = $row['id'];
+            $_SESSION['adminid'] = $row['ID'];
             header('Location: Admin-Homepage.php');
         }else {
             $msg = "Incorrect Username or Password !";

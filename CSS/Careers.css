@@ -158,26 +158,33 @@ img {
     font-size: 17px;
 }
 
-button {
-    position: absolute;
-    left: 250px;
-    bottom: 10px;
-    height: 50px;
-    border-radius: 40px;
-    background: var(--dark-color);
-    color: var(--primary-color);
-    border: 2px solid var(--dark-color);
-    width: 130px;
-    font-weight: 600;
-    margin-right: 10px;
-    transition: 0.25s ease-in;
+.button {
+    position: absolute !important;
+    left: 250px !important;
+    bottom: 10px !important;
+    height: 50px !important;
+    border-radius: 40px !important;
+    background: var(--dark-color) !important;
+    color: var(--primary-color) !important;
+    border: 2px solid var(--dark-color) !important;
+    width: 130px !important;
+    font-weight: 600 !important;
+    margin-right: 10px !important;
+    transition: 0.25s ease-in !important;
 }
 
-button:hover {
+.button:hover {
     background: none !important;
     color: var(--dark-color) !important;
     border: 2px solid var(--yellow-color) !important;
 
+}
+.modal-footer {
+    position: absolute;
+}
+#close {
+    position: absolute;
+    border: 1px solid red !important;
 }
 
 @media only screen and (max-width: 600px) {
@@ -216,7 +223,7 @@ button:hover {
         justify-items: center;
     }
 
-    button {
+    .button {
         margin-left: -50px !important;
         margin-bottom: 0px !important;
     }

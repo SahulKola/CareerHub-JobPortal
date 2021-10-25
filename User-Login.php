@@ -22,7 +22,7 @@
         if($count == 1){
             $_SESSION['userlogin'] = 'loggedin';
             $_SESSION['username'] = $row['FULLNAME'];
-            $_SESSION['userid'] = $row['id'];
+            $_SESSION['userid'] = $row['ID'];
             header('Location: Careers.php');
         }else {
             $msg = "Incorrect Username or Password !";
