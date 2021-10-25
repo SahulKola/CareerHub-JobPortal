@@ -24,7 +24,7 @@
         $count=0;
     }
     if($count){
-        $query = "INSERT INTO users VALUES ('','$fullname','$email','$password','$mobile')";
+        $query = "INSERT INTO USERS VALUES ('','$fullname','$email','$password','$mobile')";
         $res = mysqli_query($conn,$query);   
         $msg = "Congratulations, You have successfully registered !";
         $class = "198754";

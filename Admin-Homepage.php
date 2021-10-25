@@ -1,5 +1,4 @@
 <?php require 'Admin-Dashboard.php'; 
-    session_start();
     if(!isset($_SESSION['adminid'])){
         header('Location: Admin-Login.php');
     }
@@ -26,9 +25,8 @@
              require 'PHP/db.php';
              $query = "SELECT * FROM CAPPLIED";
              $result = mysqli_query($conn,$query);
-             $row = mysqli_fetch_assoc($result);
-            
              while($row = mysqli_fetch_assoc($result)){
+                echo "Hello";
                  $jid = $row['JID'];
                  $que = "SELECT * FROM CAREERS WHERE JID = '$jid'";
                  $ans = mysqli_query($conn,$que);

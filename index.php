@@ -1,6 +1,6 @@
 <?php require 'Headers/_header.php'; ?>
 
-<link rel="stylesheet" href="CSS/Style.css">
+<link rel="stylesheet" href="CSS/Homepage.css">
 <title>Home | Career Club</title>
 </head>
 
@@ -10,8 +10,8 @@
             <img src="images/logo.png" alt="logo">
             <h2>Career <span>Club</span></h2>
             <div class="buttons">
-                <a href="Admin-Signup.php"> <button class="" type="button">Admin</button></a>
-                <a href="User-Signup.php"> <button class="" type="button">Users</button></a>
+                <a href="Admin-Login.php"> <button class="" type="button">Admin</button></a>
+                <a href="User-Login.php"> <button class="" type="button">Users</button></a>
             </div>
         </div>
 
@@ -19,7 +19,7 @@
             Opportunities Don't Happen,
             <span>You</span> Create Them.
         </div>
-        <a href="#"><button type="button" class="find">Find Jobs<i class="fas fa-search"></i></button></a>
+        <a href="Careers.php"><button type="button" class="find">Find Jobs<i class="fas fa-search"></i></button></a>
     </main>
 </body>
 <?php include 'Headers/_footer.php'; ?>

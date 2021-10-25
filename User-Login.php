@@ -1,6 +1,6 @@
 <?php require 'Headers/_header.php';
-      session_start();
-      $msg = "";
+    session_start();
+    $msg = "";
     $class = "";
 ?>
 <link rel="stylesheet" href="CSS/Login.css">
@@ -15,7 +15,7 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
     if($count){
-        $query = "SELECT * FROM ADMINS WHERE EMAIL='$email' AND PASSWORD ='$password' LIMIT 1";
+        $query = "SELECT * FROM USERS WHERE EMAIL='$email' AND PASSWORD ='$password' LIMIT 1";
         $result = mysqli_query($conn,$query);   
         $row = mysqli_fetch_assoc($result);
         $count = mysqli_num_rows($result);

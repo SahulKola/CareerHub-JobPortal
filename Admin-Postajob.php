@@ -1,4 +1,7 @@
 <?php require 'Admin-Dashboard.php';
+if(!isset($_SESSION['adminid'])){
+        header('Location: Admin-Login.php');
+    }
 $msg = "";
 $class = "";
 require 'PHP/db.php';
@@ -10,7 +13,7 @@ require 'PHP/db.php';
         $skills = $_POST['skills'];
         $year = $_POST['year'];
         $salary = $_POST['salary'];
-        $id = $_SESSION['id'];
+        $id = $_SESSION['adminid'];
         $query = "INSERT INTO careers VALUES ('','$id','$companyname','$position','$location','$jd','$skills','$year','$salary')";
         print_r($conn);
         $res = mysqli_query($conn,$query);   
@@ -53,7 +56,7 @@ require 'PHP/db.php';
         </div>
         <div class="mb-1">
             <label for="exampleFormControlInput1" class="form-label">Year of Passing</label>
-            <input type="text" class="form-control" name="year" maxlength="4" required id="exampleFormControlInput1"
+            <input type="text" class="form-control" name="year" required id="exampleFormControlInput1"
                 placeholder="2022">
         </div>
         <div class="mb-1">
