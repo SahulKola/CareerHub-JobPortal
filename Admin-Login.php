@@ -4,7 +4,7 @@
     $class = "";
 ?>
 <link rel="stylesheet" href="CSS/Login.css">
-<title>Admin Login | Career Club</title>
+<title>Admin Login | Career Hub</title>
 </head>
 
 <?php require 'PHP/db.php';
@@ -36,7 +36,7 @@
     <main class="container">
         <div class="box" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <h2>Career<span>Club</span></h2>
+            <h2>Career<span>Hub</span></h2>
             <h4>Admin Login</h4>
             <hr>
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">

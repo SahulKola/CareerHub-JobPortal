@@ -6,13 +6,13 @@
 ?>
 
 <link rel="stylesheet" href="CSS/Careerspage.css">
-<title> Careers | Career Club</title>
+<title> Careers | Career Hub</title>
 </head>
 
 <body>
   <div class="bg">
     <div class="head">
-      <h2>Careers <span>Club</span></h2> <br>
+      <h2>Careers <span>Hub</span></h2> <br>
       <p> Open Positions </p>
     </div>
   </div>
@@ -63,7 +63,7 @@
       }
       else{
           $jid = $row['JID'];
-          $que = "INSERT INTO CAPPLIED VALUES('','$jid','$uid','$name','$qual','$stream','$percent','$year')";
+          $que = "INSERT INTO CAPPLIED VALUES(NULL,'$jid','$uid','$name','$qual','$stream','$percent','$year')";
           $res = mysqli_query($conn,$que);
           if($res){
             echo "<script> alert('Thank you for you intrest. Your Application has been Sent !') </script>";

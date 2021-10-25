@@ -1,14 +1,14 @@
 <?php require 'Headers/_header.php'; ?>
 
 <link rel="stylesheet" href="CSS/Homepage.css">
-<title>Home | Career Club</title>
+<title>Home | Career Hub</title>
 </head>
 
 <body>
     <main class="container">
         <div class="head">
             <img src="images/logo.png" alt="logo">
-            <h2>Career <span>Club</span></h2>
+            <h2>Career <span>Hub</span></h2>
             <div class="buttons">
                 <a href="Admin-Login.php"> <button class="" type="button">Admin</button></a>
                 <a href="User-Login.php"> <button class="" type="button">Users</button></a>

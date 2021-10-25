@@ -14,11 +14,10 @@ require 'PHP/db.php';
         $year = $_POST['year'];
         $salary = $_POST['salary'];
         $id = $_SESSION['adminid'];
-        $query = "INSERT INTO careers VALUES ('','$id','$companyname','$position','$location','$jd','$skills','$year','$salary')";
-        print_r($conn);
+        $query = "INSERT INTO CAREERS VALUES (NULL,'$id','$companyname','$position','$location','$jd','$skills','$year','$salary')";
         $res = mysqli_query($conn,$query);   
         if($res) {
-            $msg = "<b> Congrats! </b> You have successfully Posted a Job on Careers Club ";
+            $msg = "<b> Congrats! </b> You have successfully Posted a Job on Careers Hub ";
             $class = "198754";
             }
     }

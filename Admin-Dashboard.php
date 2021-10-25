@@ -3,7 +3,7 @@ session_start();
 ?>
 
 <link rel="stylesheet" href="CSS/Admin.css">
-<title> Admin Dashboard | Career Club</title>
+<title> Admin Dashboard | Career Hub</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@ session_start();
                 <li><i class="fas fa-briefcase"></i>Internships</li>
             </a>
             <a href="Underconstruction.php">
-                <li><i class="fas fa-address-card   "></i>Projects</li>
+                <li><i class="fas fa-address-card"></i>Projects</li>
             </a>
             <a href="PHP/logout.php">
                 <li><i class="fas fa-sign-out-alt"></i>Logout</li>

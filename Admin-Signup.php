@@ -3,7 +3,7 @@
     $class = "";
 ?>
 <link rel="stylesheet" href="CSS/Signup.css">
-<title>Admin Sign Up | Career Club</title>
+<title>Admin Sign Up | Career Hub</title>
 </head>
 
 <?php require 'PHP/db.php';
@@ -24,10 +24,19 @@
         $count=0;
     }
     if($count){
-        $query = "INSERT INTO admins VALUES ('','$fullname','$email','$password','$mobile')";
+        $que = "SELECT * FROM ADMINS WHERE EMAIL='$email' LIMIT 1";
+        $result = mysqli_query($conn,$que);
+        $cnt = mysqli_num_rows($result);
+        if($cnt > 0){
+            $msg = "You're, Already a Member ! Please Login";
+            $class = "ff0033";
+        }
+        else{
+        $query = "INSERT INTO ADMINS VALUES (NULL,'$fullname','$email','$password','$mobile')";
         $res = mysqli_query($conn,$query);   
         $msg = "Congratulations, You have successfully registered !";
         $class = "198754";
+        }    
     }
     }
 ?>
@@ -36,7 +45,7 @@
     <main class="container">
         <div class="box" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <h2>Career<span>Club</span></h2>
+            <h2>Career<span>Hub</span></h2>
             <h4>Create an Admin Account</h4>
             <p style="color: #aaa;">Please fill in this form to create and account</p>
             <hr>

@@ -3,7 +3,7 @@
     $class = "";
 ?>
 <link rel="stylesheet" href="CSS/Signup.css">
-<title>User Sign Up | Career Club</title>
+<title>User Sign Up | Career Hub</title>
 </head>
 
 <?php require 'PHP/db.php';
@@ -24,7 +24,7 @@
         $count=0;
     }
     if($count){
-        $query = "INSERT INTO USERS VALUES ('','$fullname','$email','$password','$mobile')";
+        $query = "INSERT INTO USERS VALUES (NULL,'$fullname','$email','$password','$mobile')";
         $res = mysqli_query($conn,$query);   
         $msg = "Congratulations, You have successfully registered !";
         $class = "198754";
@@ -36,7 +36,7 @@
     <main class="container">
         <div class="box" data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
             data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <h2>Career<span>Club</span></h2>
+            <h2>Career<span>Hub</span></h2>
             <h4>Create an User Account</h4>
             <p style="color: #aaa;">Please fill in this form to create and account</p>
             <hr>
